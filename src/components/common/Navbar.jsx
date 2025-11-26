@@ -98,7 +98,7 @@ const Navbar = () => {
                         NavbarLinks.map((link, index) => (
                             <li key={index}>
                                 {
-                                    link.title === "Catalog" ? (
+                                    link.title === "Catalogo" ? (
                                         <div
                                             className={`group relative flex cursor-pointer items-center gap-1 ${matchRoute("/catalog/:catalogName")
                                                 ? "bg-yellow-25 text-black rounded-xl p-1 px-3"
