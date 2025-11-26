@@ -58,7 +58,7 @@ export default function ProfileDropdown() {
             className="flex w-full items-center gap-x-1 py-[10px] px-[12px] text-sm text-richblack-100 hover:bg-richblack-700 hover:text-richblack-25"
           >
             <VscSignOut className="text-lg" />
-            Logout
+            Cerrar sesión
           </div>
         </div>
       )}

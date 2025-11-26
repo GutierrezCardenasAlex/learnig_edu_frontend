@@ -5,42 +5,42 @@ import CTAButton from "../../../components/core/HomePage/Button";
 const LearningGridArray = [
   {
     order: -1,
-    heading: "World-Class Learning for",
-    highlightText: "Anyone, Anywhere",
+    heading: "Aprendizaje de clase mundial en",
+    highlightText: "Cualquier Lugar",
     description:
-      "Studynotion partners with more than 275+ leading universities and companies to bring flexible, affordable, job-relevant online learning to individuals and organizations worldwide.",
-    BtnText: "Learn More",
+      "Academia SigZen se asocia con más de 275 universidades y empresas líderes para brindar aprendizaje en línea flexible, asequible y relevante para el trabajo a personas y organizaciones de todo el mundo.",
+    BtnText: "Aprende Más",
     BtnLink: "/",
   },
   {
     order: 1,
-    heading: "Curriculum Based on Industry Needs",
+    heading: "Plan de estudios basado en las necesidades de la industria",
     description:
-      "Save time and money! The Belajar curriculum is made to be easier to understand and in line with industry needs.",
+      "¡Ahorra tiempo y dinero! El plan de estudios de Belajar está diseñado para ser más fácil de entender y se adapta a las necesidades del sector.",
   },
   {
     order: 2,
-    heading: "Our Learning Methods",
+    heading: "Nuestros métodos de aprendizaje",
     description:
-      "Studynotion partners with more than 275+ leading universities and companies to bring",
+      "Academia SigZen se asocia con más de 275 universidades y empresas líderes para brindar",
   },
   {
     order: 3,
-    heading: "Certification",
+    heading: "Certificación reconocida",
     description:
-      "Studynotion partners with more than 275+ leading universities and companies to bring",
+      "SigZen Acedemia entrega certificados reconocidos por la industria para mejorar tu perfil profesional.",
   },
   {
     order: 4,
-    heading: `Rating "Auto-grading"`,
+    heading: `Calificación "Auto-calificación"`,
     description:
-      "Studynotion partners with more than 275+ leading universities and companies to bring",
+      "Practica y evalúa tu conocimiento con cuestionarios interactivos y tareas prácticas.",
   },
   {
     order: 5,
-    heading: "Ready to Work",
+    heading: "Listo para trabajar",
     description:
-      "Studynotion partners with more than 275+ leading universities and companies to bring",
+      "Adquiere habilidades prácticas y experiencia del mundo real para destacar en el competitivo mercado laboral.",
   },
 ];
 

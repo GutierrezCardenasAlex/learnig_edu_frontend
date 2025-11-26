@@ -3,7 +3,7 @@ import { Link, matchPath, useLocation } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 
 import { NavbarLinks } from "../../../data/navbar-links"
-import studyNotionLogo from '../../assets/Logo/Logo-Full-Light.png'
+import studyNotionLogo from '../../assets/Logo/Logo-Full.png'
 import { fetchCourseCategories } from './../../services/operations/courseDetailsAPI';
 
 import ProfileDropDown from '../core/Auth/ProfileDropDown'
@@ -37,7 +37,7 @@ const Navbar = () => {
             setSubLinks(res);
         }
         catch (error) {
-            console.log("Could not fetch the category list = ", error);
+            console.log("No se pudo obtener la lista de categorías = ", error);
         }
         setLoading(false)
     }
@@ -130,7 +130,7 @@ const Navbar = () => {
                                                             ))}
                                                         </>
                                                     ) : (
-                                                        <p className="text-center">No Courses Found</p>
+                                                        <p className="text-center">No se encontraron cursos</p>
                                                     )}
                                             </div>
                                         </div>

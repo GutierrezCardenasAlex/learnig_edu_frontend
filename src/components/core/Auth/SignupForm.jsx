@@ -46,7 +46,7 @@ function SignupForm() {
     e.preventDefault();
 
     if (password !== confirmPassword) {
-      toast.error("Passwords Do Not Match")
+      toast.error("La contraseña no coincide")
       return;
     }
     const signupData = {
@@ -75,7 +75,7 @@ function SignupForm() {
   const tabData = [
     {
       id: 1,
-      tabName: "Student",
+      tabName: "Estudente",
       type: ACCOUNT_TYPE.STUDENT,
     },
     {
@@ -96,7 +96,7 @@ function SignupForm() {
           {/* First Name */}
           <label>
             <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
-              First Name <sup className="text-pink-200">*</sup>
+              Nombre <sup className="text-pink-200">*</sup>
             </p>
             <input
               required
@@ -104,7 +104,7 @@ function SignupForm() {
               name="firstName"
               value={firstName}
               onChange={handleOnChange}
-              placeholder="Enter first name"
+              placeholder="Introduzca su nombre"
               style={{
                 boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
               }}
@@ -115,7 +115,7 @@ function SignupForm() {
           {/* Last Name */}
           <label>
             <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
-              Last Name <sup className="text-pink-200">*</sup>
+              Apellidos <sup className="text-pink-200">*</sup>
             </p>
             <input
               required
@@ -123,7 +123,7 @@ function SignupForm() {
               name="lastName"
               value={lastName}
               onChange={handleOnChange}
-              placeholder="Enter last name"
+              placeholder="Introduzca sus apellidos"
               style={{
                 boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
               }}
@@ -135,7 +135,7 @@ function SignupForm() {
         {/* Email Address */}
         <label className="w-full">
           <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
-            Email Address <sup className="text-pink-200">*</sup>
+            Email <sup className="text-pink-200">*</sup>
           </p>
           <input
             required
@@ -143,7 +143,7 @@ function SignupForm() {
             name="email"
             value={email}
             onChange={handleOnChange}
-            placeholder="Enter email address"
+            placeholder="Introduzca su correo electrónico"
             style={{
               boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
             }}
@@ -156,7 +156,7 @@ function SignupForm() {
           {/* Create Password */}
           <label className="relative">
             <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
-              Create Password <sup className="text-pink-200">*</sup>
+              Crear Contraseña <sup className="text-pink-200">*</sup>
             </p>
             <input
               required
@@ -164,7 +164,7 @@ function SignupForm() {
               name="password"
               value={password}
               onChange={handleOnChange}
-              placeholder="Enter Password"
+              placeholder="Introducir contraseña"
               style={{
                 boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
               }}
@@ -185,7 +185,7 @@ function SignupForm() {
           {/* Confirm Password  */}
           <label className="relative">
             <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
-              Confirm Password <sup className="text-pink-200">*</sup>
+              Confirmar Contraseña <sup className="text-pink-200">*</sup>
             </p>
             <input
               required
@@ -193,7 +193,7 @@ function SignupForm() {
               name="confirmPassword"
               value={confirmPassword}
               onChange={handleOnChange}
-              placeholder="Confirm Password"
+              placeholder="Confirmar Contraseña"
               style={{
                 boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
               }}
@@ -217,7 +217,7 @@ function SignupForm() {
           type="submit"
           className="mt-6 rounded-[8px] bg-yellow-50 py-[8px] px-[12px] font-medium text-richblack-900"
         >
-          Create Account
+          Crear Cuenta
         </button>
       </form>
     </div>

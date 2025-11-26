@@ -58,7 +58,7 @@ const ContactUsForm = () => {
             type="text"
             name="firstname"
             id="firstname"
-            placeholder="Enter first name"
+            placeholder="Introduce tu nombre"
             className="form-style"
             {...register("firstname", { required: true })}
           />
@@ -77,7 +77,7 @@ const ContactUsForm = () => {
             type="text"
             name="lastname"
             id="lastname"
-            placeholder="Enter last name"
+            placeholder="Introduce tus apellidos"
             className="form-style"
             {...register("lastname")}
           />
@@ -92,7 +92,7 @@ const ContactUsForm = () => {
           type="email"
           name="email"
           id="email"
-          placeholder="Enter email address"
+          placeholder="Introdusca su correo electrónico"
           className="form-style"
           {...register("email", { required: true })}
         />
@@ -133,12 +133,12 @@ const ContactUsForm = () => {
               type="number"
               name="phonenumber"
               id="phonenumber"
-              placeholder="12345 67890"
+              placeholder="1234567890"
               className="form-style"
               {...register("phoneNo", {
                 required: {
                   value: true,
-                  message: "Please enter your Phone Number.",
+                  message: "Por favor Introdusca su número.",
                 },
                 maxLength: { value: 12, message: "Invalid Phone Number" },
                 minLength: { value: 10, message: "Invalid Phone Number" },
@@ -162,7 +162,7 @@ const ContactUsForm = () => {
           id="message"
           cols="30"
           rows="7"
-          placeholder="Enter your message here"
+          placeholder="Introdusca su mensaje aqui"
           className="form-style"
           {...register("message", { required: true })}
         />
@@ -181,7 +181,7 @@ const ContactUsForm = () => {
           "transition-all duration-200 hover:scale-95 hover:shadow-none"
           }  disabled:bg-richblack-500 sm:text-[16px] `}
       >
-        Send Message
+        Enviar Mensaje
       </button>
     </form>
   )

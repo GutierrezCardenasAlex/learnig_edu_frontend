@@ -54,7 +54,7 @@ export default function MobileProfileDropDown() {
             setSubLinks(res);
         }
         catch (error) {
-            console.log("Could not fetch the category list = ", error);
+            console.log("No se pudo obtener la lista de categorías = ", error);
         }
         setLoading(false)
     }
@@ -106,21 +106,21 @@ export default function MobileProfileDropDown() {
                     <Link to='/' onClick={() => setOpen(false)}>
                         <div className="flex w-full items-center gap-x-1 py-[10px] px-[12px] text-sm text-richblack-100">
                             <PiNotebook className="text-lg" />
-                            Catalog
+                            Catalogo
                         </div>
                     </Link>
 
                     <Link to='/about' onClick={() => setOpen(false)}>
                         <div className="flex w-full items-center gap-x-1 py-[10px] px-[12px] text-sm text-richblack-100 border-y border-richblack-700 ">
                             <TbMessage2Plus className="text-lg" />
-                            About Us
+                            Sobre Nosotros
                         </div>
                     </Link>
 
                     <Link to='/contact' onClick={() => setOpen(false)}>
                         <div className="flex w-full items-center gap-x-1 py-[10px] px-[12px] text-sm text-richblack-100 ">
                             <MdOutlineContactPhone className="text-lg" />
-                            Contact Us
+                            Contactanos
                         </div>
                     </Link>
 
@@ -132,7 +132,7 @@ export default function MobileProfileDropDown() {
                         className="flex w-full items-center gap-x-1 py-[10px] px-[12px] text-sm text-richblack-100"
                     >
                         <VscSignOut className="text-lg" />
-                        Logout
+                        Cerrar sesión
                     </div>
 
 

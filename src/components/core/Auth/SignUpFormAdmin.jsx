@@ -46,7 +46,7 @@ function SignUpFormAdmin() {
     e.preventDefault();
 
     if (password !== confirmPassword) {
-      toast.error("Passwords Do Not Match")
+      toast.error("La contraseña no coincide")
       return;
     }
     const signupData = {

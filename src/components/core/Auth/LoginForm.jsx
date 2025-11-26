@@ -44,7 +44,7 @@ function LoginForm() {
           name="email"
           value={email}
           onChange={handleOnChange}
-          placeholder="Enter email address"
+          placeholder="Ingrese su correo electrónico"
           style={{
             boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
           }}
@@ -62,7 +62,7 @@ function LoginForm() {
           name="password"
           value={password}
           onChange={handleOnChange}
-          placeholder="Enter Password"
+          placeholder="Ingrese su contraseña"
           style={{
             boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
           }}
@@ -90,7 +90,7 @@ function LoginForm() {
         type="submit"
         className="mt-6 rounded-[8px] bg-yellow-50 py-[8px] px-[12px] font-medium text-richblack-900"
       >
-        Sign In
+        Iniciar sesión
       </button>
     </form>
   )

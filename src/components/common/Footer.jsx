@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { ImGithub, ImLinkedin2 } from "react-icons/im";
 
 // Imagen del logo de tu plataforma
-import StudyNotionLogo from "../../assets/Logo/Logo-Full-Light.png";
+import StudyNotionLogo from "../../assets/Logo/Logo-Full.png";
 
 const BottomFooter = ["Política de Privacidad", "Política de Cookies", "Términos y Condiciones"];
 

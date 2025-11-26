@@ -26,12 +26,12 @@ function CourseDetailsCard({ course, setConfirmationModal, handleBuyCourse }) {
 
   const handleShare = () => {
     copy(window.location.href)
-    toast.success("Link copied to clipboard")
+    toast.success("Enlace copiado a portapapeles")
   }
 
   const handleAddToCart = () => {
     if (user && user?.accountType === ACCOUNT_TYPE.INSTRUCTOR) {
-      toast.error("You are an Instructor. You can't buy a course.")
+      toast.error("Eres instructor. No puedes comprar un curso.")
       return
     }
     if (token) {
@@ -39,10 +39,10 @@ function CourseDetailsCard({ course, setConfirmationModal, handleBuyCourse }) {
       return
     }
     setConfirmationModal({
-      text1: "You are not logged in!",
-      text2: "Please login to add To Cart",
-      btn1Text: "Login",
-      btn2Text: "Cancel",
+      text1: "¡No has iniciado sesión!",
+      text2: "Inicie sesión para agregarlo al carrito",
+      btn1Text: "Iniciar",
+      btn2Text: "Cancelar",
       btn1Handler: () => navigate("/login"),
       btn2Handler: () => setConfirmationModal(null),
     })
@@ -81,18 +81,18 @@ function CourseDetailsCard({ course, setConfirmationModal, handleBuyCourse }) {
             </button>
             {(!user || !course?.studentsEnrolled.includes(user?._id)) && (
               <button onClick={handleAddToCart} className="blackButton outline-none">
-                Add to Cart
+                Añadir al carrito
               </button>
             )}
           </div>
 
           <p className="pb-3 pt-6 text-center text-sm text-richblack-25">
-            30-Day Money-Back Guarantee
+            Garantía de devolución de dinero de 30 días
           </p>
 
           <div className={``}>
             <p className={`my-2 text-xl font-semibold `}>
-              Course Requirements :
+              Requisitos del curso :
             </p>
             <div className="flex flex-col gap-3 text-sm text-caribbeangreen-100">
               {course?.instructions?.map((item, i) => {
