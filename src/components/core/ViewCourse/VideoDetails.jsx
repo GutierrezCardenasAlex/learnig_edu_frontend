@@ -193,7 +193,7 @@ const VideoDetails = () => {
                 <IconBtn
                   disabled={loading}
                   onclick={() => handleLectureCompletion()}
-                  text={!loading ? "Mark As Completed" : "Loading..."}
+                  text={!loading ? "Marcar como completada" : "Loading..."}
                   customClasses="text-xl max-w-max px-4 mx-auto"
                 />
               )}
@@ -217,7 +217,7 @@ const VideoDetails = () => {
                     onClick={goToPrevVideo}
                     className="blackButton"
                   >
-                    Prev
+                    Anterio
                   </button>
                 )}
                 {!isLastVideo() && (
@@ -226,7 +226,7 @@ const VideoDetails = () => {
                     onClick={goToNextVideo}
                     className="blackButton"
                   >
-                    Next
+                    Siguiente
                   </button>
                 )}
               </div>

@@ -56,7 +56,7 @@ export default function RequirementsField({ name, label, register, setValue, err
           onClick={handleAddRequirement}
           className="font-semibold text-yellow-50"
         >
-          Add
+          Añadir Requisito
         </button>
       </div>
 
@@ -80,7 +80,7 @@ export default function RequirementsField({ name, label, register, setValue, err
 
       {errors[name] && (
         <span className="ml-2 text-xs tracking-wide text-pink-200">
-          {label} is required
+          {label} es obligatorio
         </span>
       )}
     </div>

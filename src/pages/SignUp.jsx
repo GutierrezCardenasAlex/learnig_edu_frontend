@@ -4,9 +4,9 @@ import Template from "../components/core/Auth/Template"
 function Signup() {
   return (
     <Template
-      title="Join the millions learning to code with StudyNotion for free"
-      description1="Build skills for today, tomorrow, and beyond."
-      description2="Education to future-proof your career."
+      title="Registrate, millones de personas que aprenden a codificar con Academia SigZen de forma gratuita."
+      description1="Desarrolle habilidades para el futuro."
+      description2="Educación para asegurar el futuro de tu carrera."
       image={signupImg}
       formType="signup"
     />

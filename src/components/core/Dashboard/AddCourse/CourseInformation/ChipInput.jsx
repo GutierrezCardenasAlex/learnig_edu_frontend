@@ -89,7 +89,7 @@ export default function ChipInput({ label, name, placeholder, register, errors, 
       </div>
       {errors[name] && (
         <span className="ml-2 text-xs tracking-wide text-pink-200">
-          {label} is required
+          {label} es obligatorio
         </span>
       )}
     </div>

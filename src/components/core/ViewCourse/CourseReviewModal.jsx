@@ -51,7 +51,7 @@ export default function CourseReviewModal({ setReviewModal }) {
       <div className="my-10 w-11/12 max-w-[700px] rounded-lg border border-richblack-400 bg-richblack-800">
         {/* Modal Header */}
         <div className="flex items-center justify-between rounded-t-lg bg-richblack-700 p-5">
-          <p className="text-xl font-semibold text-richblack-5">Add Review</p>
+          <p className="text-xl font-semibold text-richblack-5">Añadir reseña</p>
           <button onClick={() => setReviewModal(false)}>
             <RxCross2 className="text-2xl text-richblack-5" />
           </button>
@@ -69,7 +69,7 @@ export default function CourseReviewModal({ setReviewModal }) {
               <p className="font-semibold text-richblack-5 capitalize">
                 {user?.firstName} {user?.lastName}
               </p>
-              <p className="text-sm text-richblack-5">Posting Publicly</p>
+              <p className="text-sm text-richblack-5">Publicación Pública</p>
             </div>
           </div>
 
@@ -90,17 +90,17 @@ export default function CourseReviewModal({ setReviewModal }) {
                 className="text-sm text-richblack-5"
                 htmlFor="courseExperience"
               >
-                Add Your Experience <sup className="text-pink-200">*</sup>
+                Añade tu experiencia <sup className="text-pink-200">*</sup>
               </label>
               <textarea
                 id="courseExperience"
-                placeholder="Add Your Experience"
+                placeholder="Añade tu experiencia"
                 {...register("courseExperience", { required: true })}
                 className="form-style resize-x-none min-h-[130px] w-full"
               />
               {errors.courseExperience && (
                 <span className="ml-2 text-xs tracking-wide text-pink-200">
-                  Please Add Your Experience
+                  Por favor agregue su experiencia
                 </span>
               )}
             </div>
@@ -111,9 +111,9 @@ export default function CourseReviewModal({ setReviewModal }) {
                 className={`flex cursor-pointer items-center gap-x-2 rounded-md bg-richblack-300 py-[8px] px-[20px] font-semibold
                            text-richblack-900 hover:bg-richblack-900 hover:text-richblack-300 duration-300`}
               >
-                Cancel
+                Cancelar
               </button>
-              <IconBtn text="Save" />
+              <IconBtn text="Guardar" />
             </div>
           </form>
         </div>

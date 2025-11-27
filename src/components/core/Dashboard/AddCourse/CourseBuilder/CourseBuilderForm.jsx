@@ -66,12 +66,12 @@ export default function CourseBuilderForm() {
   // go To Next
   const goToNext = () => {
   if (course?.courseContent?.length === 0) {
-    toast.error("Please add at least one section")
+    toast.error("Por favor, añade al menos una sección")
     return
   }
 
   if (course.courseContent.some((section) => section.subSection.length === 0)) {
-    toast.error("Please add at least one lecture in each section")
+    toast.error("Por favor, agregue al menos una lección en cada sección.")
     return
   }
 
@@ -87,24 +87,24 @@ export default function CourseBuilderForm() {
 
   return (
     <div className="space-y-8 rounded-2xl border-[1px] border-richblack-700 bg-richblack-800 p-6">
-      <p className="text-2xl font-semibold text-richblack-5">Course Builder</p>
+      <p className="text-2xl font-semibold text-richblack-5">Constructor Curso</p>
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         {/* Section Name */}
         <div className="flex flex-col space-y-2">
           <label className="text-sm text-richblack-5" htmlFor="sectionName">
-            Section Name <sup className="text-pink-200">*</sup>
+            Nombre Sección <sup className="text-pink-200">*</sup>
           </label>
           <input
             id="sectionName"
             disabled={loading}
-            placeholder="Add a section to build your course"
+            placeholder="Añade una sección para el curso"
             {...register("sectionName", { required: true })}
             className="form-style w-full"
           />
           {errors.sectionName && (
             <span className="ml-2 text-xs tracking-wide text-pink-200">
-              Section name is required
+              Nombre de la sección es obligatorio
             </span>
           )}
         </div>
@@ -114,7 +114,7 @@ export default function CourseBuilderForm() {
           <IconBtn
             type="submit"
             disabled={loading}
-            text={editSectionName ? "Edit Section Name" : "Create Section"}
+            text={editSectionName ? "Editar nombre de sección" : "Crear Sección"}
             outline={true}
           >
             <IoAddCircleOutline size={20} className="text-yellow-50" />
@@ -126,7 +126,7 @@ export default function CourseBuilderForm() {
               onClick={cancelEdit}
               className="text-sm text-richblack-300 underline"
             >
-              Cancel Edit
+              Cancelar editar
             </button>
           )}
         </div>
@@ -143,11 +143,11 @@ export default function CourseBuilderForm() {
           onClick={goBack}
           className={`rounded-md bg-richblack-300 py-[8px] px-[20px] font-semibold text-richblack-900`}
         >
-          Back
+          Volver
         </button>
 
         {/* Next button */}
-        <IconBtn disabled={loading} text="Next" onclick={goToNext}>
+        <IconBtn disabled={loading} text="Siguiente" onclick={goToNext}>
           <MdNavigateNext />
         </IconBtn>
       </div>

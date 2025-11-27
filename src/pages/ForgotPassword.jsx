@@ -29,8 +29,8 @@ function ForgotPassword() {
           </h1>
           <div className="my-4 text-[1.125rem] leading-[1.625rem] text-richblack-100">
             {!emailSent
-              ? "Have no fear. We'll email you instructions to reset your password. If you dont have access to your email we can try account recovery"
-              : <p>We have sent the reset email to <span className="text-yellow-200">{email}</span></p>}
+              ? "No te preocupes. Te enviaremos instrucciones por correo electrónico para restablecer tu contraseña. Si no tienes acceso a tu correo electrónico, podemos intentar recuperar tu cuenta."
+              : <p>Hemos enviado el correo electrónico de restablecimiento a <span className="text-yellow-200">{email}</span></p>}
           </div>
 
           <form onSubmit={handleOnSubmit}>
@@ -45,7 +45,7 @@ function ForgotPassword() {
                   name="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Enter email address"
+                  placeholder="Introduzca su correo electrónico"
                   style={{
                     boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
                   }}
@@ -58,14 +58,14 @@ function ForgotPassword() {
               type="submit"
               className="mt-6 w-full rounded-[8px] bg-yellow-50 py-[12px] px-[12px] font-medium text-richblack-900"
             >
-              {!emailSent ? "Sumbit" : "Resend Email"}
+              {!emailSent ? "Enviar" : "Reenviar correo electrónico"}
             </button>
           </form>
 
           <div className="mt-6 flex items-center justify-between">
             <Link to="/login">
               <p className="flex items-center gap-x-2 text-richblack-5">
-                <BiArrowBack /> Back To Login
+                <BiArrowBack /> Volver a iniciar sesión
               </p>
             </Link>
           </div>

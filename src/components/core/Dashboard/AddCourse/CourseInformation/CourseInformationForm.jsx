@@ -118,7 +118,7 @@ export default function CourseInformationForm() {
           dispatch(setCourse(result))
         }
       } else {
-        toast.error("No changes made to the form")
+        toast.error("No se realizaron cambios en el formulario")
       }
       return
     }
@@ -156,17 +156,17 @@ export default function CourseInformationForm() {
       {/* Course Title */}
       <div className="flex flex-col space-y-2">
         <label className="text-sm text-richblack-5" htmlFor="courseTitle">
-          Course Title <sup className="text-pink-200">*</sup>
+          Título Curso <sup className="text-pink-200">*</sup>
         </label>
         <input
           id="courseTitle"
-          placeholder="Enter Course Title"
+          placeholder="Introduzca Título del curso"
           {...register("courseTitle", { required: true })}
           className="form-style w-full"
         />
         {errors.courseTitle && (
           <span className="ml-2 text-xs tracking-wide text-pink-200">
-            Course title is required
+            Título del curso es obligatorio
           </span>
         )}
       </div>
@@ -174,17 +174,17 @@ export default function CourseInformationForm() {
       {/* Course Short Description */}
       <div className="flex flex-col space-y-2">
         <label className="text-sm text-richblack-5" htmlFor="courseShortDesc">
-          Course Short Description <sup className="text-pink-200">*</sup>
+          Descripcion Curso <sup className="text-pink-200">*</sup>
         </label>
         <textarea
           id="courseShortDesc"
-          placeholder="Enter Description"
+          placeholder="Introduzca una breve descripcion del curso"
           {...register("courseShortDesc", { required: true })}
           className="form-style resize-x-none min-h-[130px] w-full ] "
         />
         {errors.courseShortDesc && (
           <span className="ml-2 text-xs tracking-wide text-pink-200">
-            Course Description is required
+            Descripción obligatoria del curso
           </span>
         )}
       </div>
@@ -192,12 +192,12 @@ export default function CourseInformationForm() {
       {/* Course Price */}
       <div className="flex flex-col space-y-2">
         <label className="text-sm text-richblack-5" htmlFor="coursePrice">
-          Course Price <sup className="text-pink-200">*</sup>
+          Precio Curso <sup className="text-pink-200">*</sup>
         </label>
         <div className="relative">
           <input
             id="coursePrice"
-            placeholder="Enter Course Price"
+            placeholder="Introduzca el precio del curso"
             {...register("coursePrice", {
               required: true,
               valueAsNumber: true,
@@ -212,7 +212,7 @@ export default function CourseInformationForm() {
         </div>
         {errors.coursePrice && (
           <span className="ml-2 text-xs tracking-wide text-pink-200">
-            Course Price is required
+            Precio obligatorio del curso
           </span>
         )}
       </div>
@@ -220,7 +220,7 @@ export default function CourseInformationForm() {
       {/* Course Category */}
       <div className="flex flex-col space-y-2 ">
         <label className="text-sm text-richblack-5" htmlFor="courseCategory">
-          Course Category <sup className="text-pink-200">*</sup>
+          Categoria Curso <sup className="text-pink-200">*</sup>
         </label>
         <select
           {...register("courseCategory", { required: true })}
@@ -229,7 +229,7 @@ export default function CourseInformationForm() {
           className="form-style w-full cursor-pointer"
         >
           <option value="" disabled>
-            Choose a Category
+            Seleccionar Categoria
           </option>
           {!loading &&
             courseCategories?.map((category, indx) => (
@@ -240,16 +240,16 @@ export default function CourseInformationForm() {
         </select>
         {errors.courseCategory && (
           <span className="ml-2 text-xs tracking-wide text-pink-200">
-            Course Category is required
+            Categoria del curso es obligatoria
           </span>
         )}
       </div>
 
       {/* Course Tags */}
       <ChipInput
-        label="Tags"
+        label="Etiquetas"
         name="courseTags"
-        placeholder="Enter Tags and press Enter or Comma"
+        placeholder="Ej: 💻 Presionar Enter"
         register={register}
         errors={errors}
         setValue={setValue}
@@ -258,7 +258,7 @@ export default function CourseInformationForm() {
       {/* Course Thumbnail Image */}
       <Upload
         name="courseImage"
-        label="Course Thumbnail"
+        label="Imagen del Curso"
         register={register}
         setValue={setValue}
         errors={errors}
@@ -268,17 +268,17 @@ export default function CourseInformationForm() {
       {/* Benefits of the course */}
       <div className="flex flex-col space-y-2">
         <label className="text-sm text-richblack-5" htmlFor="courseBenefits">
-          Benefits of the course <sup className="text-pink-200">*</sup>
+          Beneficios del curso <sup className="text-pink-200">*</sup>
         </label>
         <textarea
           id="courseBenefits"
-          placeholder="Enter benefits of the course"
+          placeholder="Introducir Benificios del curso"
           {...register("courseBenefits", { required: true })}
           className="form-style resize-x-none min-h-[130px] w-full"
         />
         {errors.courseBenefits && (
           <span className="ml-2 text-xs tracking-wide text-pink-200">
-            Benefits of the course is required
+            Beneficos del curso son obligatorios
           </span>
         )}
       </div>
@@ -286,7 +286,7 @@ export default function CourseInformationForm() {
       {/* Requirements/Instructions */}
       <RequirementsField
         name="courseRequirements"
-        label="Requirements/Instructions"
+        label="Requisitos/Instrucciones"
         register={register}
         setValue={setValue}
         errors={errors}
@@ -301,12 +301,12 @@ export default function CourseInformationForm() {
             className={`flex cursor-pointer items-center gap-x-2 rounded-md py-[8px] px-[20px] font-semibold
               text-richblack-900 bg-richblack-300 hover:bg-richblack-900 hover:text-richblack-300 duration-300`}
           >
-            Continue Wihout Saving
+            Continuar sin guardar
           </button>
         )}
         <IconBtn
           disabled={loading}
-          text={!editCourse ? "Next" : "Save Changes"}
+          text={!editCourse ? "Siguiente" : "Guardar Cambios"}
         >
           <MdNavigateNext />
         </IconBtn>

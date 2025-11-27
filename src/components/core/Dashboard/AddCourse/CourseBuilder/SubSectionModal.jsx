@@ -93,7 +93,7 @@ export default function SubSectionModal({ modalData, setModalData, add = false, 
 
     if (edit) {
       if (!isFormUpdated()) {
-        toast.error("No changes made to the form")
+        toast.error("No se realizaron cambios en el formulario")
       } else {
         handleEditSubsection()
       }
@@ -125,7 +125,7 @@ export default function SubSectionModal({ modalData, setModalData, add = false, 
         {/* Modal Header */}
         <div className="flex items-center justify-between rounded-t-lg bg-richblack-700 p-5">
           <p className="text-xl font-semibold text-richblack-5">
-            {view && "Viewing"} {add && "Adding"} {edit && "Editing"} Lecture
+            {view && "Ver"} {add && "Añadir"} {edit && "Editar"} Video
           </p>
           <button onClick={() => (!loading ? setModalData(null) : {})}>
             <RxCross2 className="text-2xl text-richblack-5" />
@@ -139,7 +139,7 @@ export default function SubSectionModal({ modalData, setModalData, add = false, 
           {/* Lecture Video Upload */}
           <Upload
             name="lectureVideo"
-            label="Lecture Video"
+            label="Video"
             register={register}
             setValue={setValue}
             errors={errors}
@@ -150,18 +150,18 @@ export default function SubSectionModal({ modalData, setModalData, add = false, 
           {/* Lecture Title */}
           <div className="flex flex-col space-y-2">
             <label className="text-sm text-richblack-5" htmlFor="lectureTitle">
-              Lecture Title {!view && <sup className="text-pink-200">*</sup>}
+              Título Video {!view && <sup className="text-pink-200">*</sup>}
             </label>
             <input
               disabled={view || loading}
               id="lectureTitle"
-              placeholder="Enter Lecture Title"
+              placeholder="Introducir título"
               {...register("lectureTitle", { required: true })}
               className="form-style w-full"
             />
             {errors.lectureTitle && (
               <span className="ml-2 text-xs tracking-wide text-pink-200">
-                Lecture title is required
+                Obligatorio el título del video
               </span>
             )}
           </div>
@@ -169,19 +169,19 @@ export default function SubSectionModal({ modalData, setModalData, add = false, 
           {/* Lecture Description */}
           <div className="flex flex-col space-y-2">
             <label className="text-sm text-richblack-5" htmlFor="lectureDesc">
-              Lecture Description{" "}
+              Descripción del video{" "}
               {!view && <sup className="text-pink-200">*</sup>}
             </label>
             <textarea
               disabled={view || loading}
               id="lectureDesc"
-              placeholder="Enter Lecture Description"
+              placeholder="Introducir descripción"
               {...register("lectureDesc", { required: true })}
               className="form-style resize-x-none min-h-[130px] w-full"
             />
             {errors.lectureDesc && (
               <span className="ml-2 text-xs tracking-wide text-pink-200">
-                Lecture Description is required
+                Descripción obligatorio
               </span>
             )}
           </div>

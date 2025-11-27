@@ -114,7 +114,7 @@ const ContactUsForm = () => {
               type="text"
               name="firstname"
               id="firstname"
-              placeholder="Enter first name"
+              placeholder="Introdusca su numero de telefono"
               className="form-style"
               {...register("countrycode", { required: true })}
             >
@@ -141,7 +141,7 @@ const ContactUsForm = () => {
                   message: "Por favor Introdusca su número.",
                 },
                 maxLength: { value: 12, message: "Invalid Phone Number" },
-                minLength: { value: 10, message: "Invalid Phone Number" },
+                minLength: { value: 8, message: "Invalid Phone Number" },
               })}
             />
           </div>

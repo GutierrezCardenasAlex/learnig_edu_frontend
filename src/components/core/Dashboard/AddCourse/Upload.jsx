@@ -86,7 +86,7 @@ export default function Upload({ name, label, register, setValue, errors, video 
                 }}
                 className="mt-3 text-richblack-400 underline"
               >
-                Cancel
+                Cancelar
               </button>
             )}
           </div>
@@ -102,7 +102,7 @@ export default function Upload({ name, label, register, setValue, errors, video 
             <p className="mt-2 max-w-[200px] text-center text-sm text-richblack-200">
               Drag and drop an {!video ? "image" : "video"}, or click to{" "}
               <span className="font-semibold text-yellow-50">Browse</span> a
-              file
+              file png, jpg, jpeg {!video ? "" : ", mp4"}
             </p>
             <ul className="mt-10 flex list-disc justify-between space-x-12 text-center  text-xs text-richblack-200">
               <li>Aspect ratio 16:9</li>
@@ -114,7 +114,7 @@ export default function Upload({ name, label, register, setValue, errors, video 
 
       {errors[name] && (
         <span className="ml-2 text-xs tracking-wide text-pink-200">
-          {label} is required
+          {label} es obligatorio
         </span>
       )}
     </div>

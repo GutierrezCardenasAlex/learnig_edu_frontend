@@ -4,9 +4,9 @@ import Template from "../components/core/Auth/Template"
 function Login() {
   return (
     <Template
-      title="Welcome Back"
-      description1="Build skills for today, tomorrow, and beyond."
-      description2="Education to future-proof your career."
+      title="Bienvenido de nuevo a SigZen"
+      description1="Desarrolle habilidades para el futuro"
+      description2="Educación para asegurar el futuro de tu carrera."
       image={loginImg}
       formType="login"
     />

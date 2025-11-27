@@ -64,7 +64,7 @@ function CourseDetailsCard({ course, setConfirmationModal, handleBuyCourse }) {
 
         <div className="px-4">
           <div className="space-x-3 pb-4 text-3xl font-semibold">
-            Rs. {CurrentPrice}
+            Bs. {CurrentPrice}
           </div>
           <div className="flex flex-col gap-4">
             <button
@@ -76,8 +76,8 @@ function CourseDetailsCard({ course, setConfirmationModal, handleBuyCourse }) {
               }
             >
               {user && course?.studentsEnrolled.includes(user?._id)
-                ? "Go To Course"
-                : "Buy Now"}
+                ? "Ir al curso"
+                : "Comprar ahora"}
             </button>
             {(!user || !course?.studentsEnrolled.includes(user?._id)) && (
               <button onClick={handleAddToCart} className="blackButton outline-none">

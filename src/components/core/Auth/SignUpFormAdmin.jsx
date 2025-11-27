@@ -99,7 +99,7 @@ function SignUpFormAdmin() {
               name="firstName"
               value={firstName}
               onChange={handleOnChange}
-              placeholder="Enter first name"
+              placeholder="Introducir nombre"
               style={{
                 boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
               }}
@@ -118,7 +118,7 @@ function SignUpFormAdmin() {
               name="lastName"
               value={lastName}
               onChange={handleOnChange}
-              placeholder="Enter last name"
+              placeholder="Introducir apellidos"
               style={{
                 boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
               }}
@@ -138,7 +138,7 @@ function SignUpFormAdmin() {
             name="email"
             value={email}
             onChange={handleOnChange}
-            placeholder="Enter email address"
+            placeholder="Introducir correo electronico"
             style={{
               boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
             }}
@@ -159,7 +159,7 @@ function SignUpFormAdmin() {
               name="password"
               value={password}
               onChange={handleOnChange}
-              placeholder="Enter Password"
+              placeholder="Introducir contraseña"
               style={{
                 boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
               }}
@@ -188,7 +188,7 @@ function SignUpFormAdmin() {
               name="confirmPassword"
               value={confirmPassword}
               onChange={handleOnChange}
-              placeholder="Confirm Password"
+              placeholder="Confirmar contraseña"
               style={{
                 boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
               }}
@@ -212,7 +212,7 @@ function SignUpFormAdmin() {
           type="submit"
           className="mt-6 rounded-[8px] bg-yellow-50 py-[8px] px-[12px] font-medium text-richblack-900"
         >
-          Create Account
+          Crear Cuenta
         </button>
       </form>
     </div>

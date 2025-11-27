@@ -86,10 +86,10 @@ export default function NestedView({ handleChangeEditSectionName }) {
                 <button
                   onClick={() =>
                     setConfirmationModal({
-                      text1: "Delete this Section?",
-                      text2: "All the lectures in this section will be deleted",
-                      btn1Text: "Delete",
-                      btn2Text: "Cancel",
+                      text1: "Eliminar esta Sección?",
+                      text2: "Todos los videos de esta sección serán eliminadas.",
+                      btn1Text: "Eliminar",
+                      btn2Text: "Cancelar",
                       btn1Handler: () => handleDeleleSection(section._id),
                       btn2Handler: () => setConfirmationModal(null),
                     })
@@ -131,10 +131,10 @@ export default function NestedView({ handleChangeEditSectionName }) {
                     <button
                       onClick={() =>
                         setConfirmationModal({
-                          text1: "Delete this Sub-Section?",
-                          text2: "This lecture will be deleted",
-                          btn1Text: "Delete",
-                          btn2Text: "Cancel",
+                          text1: "Eliminar este Sub-Sección?",
+                          text2: "Este video sera eliminado",
+                          btn1Text: "Eliminar",
+                          btn2Text: "Cancelar",
                           btn1Handler: () =>
                             handleDeleteSubSection(data._id, section._id),
                           btn2Handler: () => setConfirmationModal(null),
@@ -152,7 +152,7 @@ export default function NestedView({ handleChangeEditSectionName }) {
                 className="mt-3 flex items-center gap-x-1 text-yellow-50"
               >
                 <FaPlus className="text-lg" />
-                <p>Add Lecture</p>
+                <p>Añadir Video</p>
               </button>
             </div>
           </details>

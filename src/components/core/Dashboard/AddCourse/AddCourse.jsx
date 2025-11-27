@@ -24,17 +24,17 @@ export default function AddCourse() {
 
       {/* Course Upload Tips */}
       <div className="sticky top-10 hidden lg:block max-w-[400px] flex-1 rounded-md border-[1px] border-richblack-700 bg-richblack-800 p-6 ">
-        <p className="mb-8 text-lg text-richblack-5">⚡ Course Upload Tips</p>
+        <p className="mb-8 text-lg text-richblack-5">⚡ Instruccion para cargar curso</p>
 
         <ul className="ml-5 list-item list-disc space-y-4 text-xs text-richblack-5">
-          <li>Set the Course Price option or make it free.</li>
-          <li>Standard size for the course thumbnail is 1024x576.</li>
-          <li>Video section controls the course overview video.</li>
-          <li>Course Builder is where you create & organize a course.</li>
-          <li>Add Topics in the Course Builder section to create lessons,quizzes, and assignments.</li>
-          <li>Information from the Additional Data section shows up on thecourse single page.</li>
-          <li>Make Announcements to notify any important</li>
-          <li>Notes to all enrolled students at once.</li>
+          <li>Establezca la opción Precio del curso o hágalo gratuito.</li>
+          <li>El tamaño estándar para la miniatura del curso es 1024x576.</li>
+          <li>La sección de video controla el video, descripción general del curso.</li>
+          <li>Crear curso es donde usted crea y organiza un curso.</li>
+          <li>Agregue temas en la sección Creador de cursos para crear lecciones, cuestionarios y tareas.</li>
+          <li>La información de la sección Datos adicionales aparece en la página única del curso.</li>
+          <li>Hacer anuncios para notificar cualquier evento importante</li>
+          <li>Notas para todos los estudiantes matriculados a la vez.</li>
         </ul>
       </div>
     </div>

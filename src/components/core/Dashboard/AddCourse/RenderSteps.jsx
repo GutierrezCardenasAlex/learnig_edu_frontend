@@ -17,15 +17,15 @@ export default function RenderSteps() {
   const steps = [
     {
       id: 1,
-      title: "Course Information",
+      title: "Informacion del Curso",
     },
     {
       id: 2,
-      title: "Course Builder",
+      title: "Crear Curso",
     },
     {
       id: 3,
-      title: "Publish",
+      title: "Publicar Curso",
     },
   ]
 
