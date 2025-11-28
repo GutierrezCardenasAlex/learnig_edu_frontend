@@ -46,7 +46,7 @@ export default function RenderCartCourses() {
                   fullIcon={<FaStar />}
                 />
                 <span className="text-richblack-400">
-                  {course?.ratingAndReviews?.length} Ratings
+                  {course?.ratingAndReviews?.length} Calificaciones
                 </span>
               </div>
             </div>
@@ -58,10 +58,10 @@ export default function RenderCartCourses() {
               className="flex items-center gap-x-1 rounded-md border border-richblack-600 bg-richblack-700 py-3 px-[12px] text-pink-200"
             >
               <RiDeleteBin6Line />
-              <span>Remove</span>
+              <span>Eliminar</span>
             </button>
             <p className="mb-6 text-3xl font-medium text-yellow-100">
-              ₹ {course?.price}
+              Bs {course?.price}
             </p>
           </div>
         </div>

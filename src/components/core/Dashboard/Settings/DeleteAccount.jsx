@@ -25,13 +25,13 @@ export default function DeleteAccount() {
         </div>
 
         <div className="flex flex-col ">
-          <h2 className="text-lg font-semibold text-richblack-5 "> Delete Account</h2>
+          <h2 className="text-lg font-semibold text-richblack-5 "> Eliminar Cuenta</h2>
 
           <div className="sm:w-3/5 text-pink-25 flex flex-col gap-3 mt-1">
-            <p>Would you like to delete account ?</p>
+            <p>¿Quieres eliminar la cuenta?</p>
             <p>
-              This account may contain Paid Courses. Deleting your account is
-              permanent and will remove all the contain associated with it.
+              Esta cuenta puede contener cursos de pago. 
+              Eliminar tu cuenta es permanente y eliminará todo el contenido asociado.
             </p>
           </div>
 
@@ -49,16 +49,16 @@ export default function DeleteAccount() {
               className="w-fit italic text-pink-300  "
               onClick={() => check &&
                 setConfirmationModal({
-                  text1: "Are you sure ?",
-                  text2: "Delete my account...!",
-                  btn1Text: "Delete",
-                  btn2Text: "Cancel",
+                  text1: "Estas seguro?",
+                  text2: "¡Borrar mi cuenta...!",
+                  btn1Text: "Eliminar",
+                  btn2Text: "Cancelar",
                   btn1Handler: () => dispatch(deleteProfile(token, navigate)),
                   btn2Handler: () => { setConfirmationModal(null); setCheck(false) },
                 })
               }
             >
-              I want to delete my account.
+              Quiero eliminar mi cuenta.
             </button>
           </div>
 

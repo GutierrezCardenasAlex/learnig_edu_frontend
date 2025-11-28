@@ -29,55 +29,56 @@ export default function EditProfile() {
         {/* Profile Information */}
         <div className="my-10 flex flex-col gap-y-6 rounded-md border-[1px] border-richblack-700 bg-richblack-800 p-8 px-6 sm:px-12">
           <h2 className="text-lg font-semibold text-richblack-5">
-            Profile Information
+            Información del Perfil
           </h2>
 
           <div className="flex flex-col gap-5 lg:flex-row">
             <div className="flex flex-col gap-2 lg:w-[48%]">
               <label htmlFor="firstName" className="lable-style">
-                First Name
+                Nombre:
               </label>
               <input
                 type="text"
                 name="firstName"
                 id="firstName"
-                placeholder="Enter first name"
+                placeholder="Ingrese su nombre"
                 className="form-style"
                 {...register("firstName", { required: true })}
                 defaultValue={user?.firstName}
               />
               {errors.firstName && (
                 <span className="-mt-1 text-[12px] text-yellow-100">
-                  Please enter your first name.
+                  Por favor ingrese su nombre.
                 </span>
               )}
             </div>
 
             <div className="flex flex-col gap-2 lg:w-[48%]">
               <label htmlFor="lastName" className="lable-style">
-                Last Name
+                Apellidos:
               </label>
               <input
                 type="text"
                 name="lastName"
                 id="lastName"
-                placeholder="Enter first name"
+                placeholder="Ingrese sus apellidos"
                 className="form-style"
                 {...register("lastName", { required: true })}
                 defaultValue={user?.lastName}
               />
               {errors.lastName && (
                 <span className="-mt-1 text-[12px] text-yellow-100">
-                  Please enter your last name.
+                  Porfavor ingrese su apellido.
                 </span>
               )}
             </div>
+
           </div>
 
           <div className="flex flex-col gap-5 lg:flex-row">
             <div className="flex flex-col gap-2 lg:w-[48%]">
               <label htmlFor="dateOfBirth" className="lable-style">
-                Date of Birth
+                Fecha de nacimiento
               </label>
               <input
                 type="date"
@@ -87,11 +88,11 @@ export default function EditProfile() {
                 {...register("dateOfBirth", {
                   required: {
                     value: true,
-                    message: "Please enter your Date of Birth.",
+                    message: "Por favor ingrese su fecha de nacimiento.",
                   },
                   max: {
                     value: new Date().toISOString().split("T")[0],
-                    message: "Date of Birth cannot be in the future.",
+                    message: "La fecha de nacimiento no puede ser futura.",
                   },
                 })}
                 defaultValue={user?.additionalDetails?.dateOfBirth}
@@ -105,7 +106,7 @@ export default function EditProfile() {
 
             <div className="flex flex-col gap-2 lg:w-[48%]">
               <label htmlFor="gender" className="lable-style">
-                Gender
+                Género:
               </label>
               <select
                 type="text"
@@ -125,7 +126,7 @@ export default function EditProfile() {
               </select>
               {errors.gender && (
                 <span className="-mt-1 text-[12px] text-yellow-100">
-                  Please enter your Date of Birth.
+                  Por favor ingrese su fecha de nacimiento.
                 </span>
               )}
             </div>
@@ -134,21 +135,21 @@ export default function EditProfile() {
           <div className="flex flex-col gap-5 lg:flex-row">
             <div className="flex flex-col gap-2 lg:w-[48%]">
               <label htmlFor="contactNumber" className="lable-style">
-                Contact Number
+                Número de contacto:
               </label>
               <input
                 type="tel"
                 name="contactNumber"
                 id="contactNumber"
-                placeholder="Enter Contact Number"
+                placeholder="Ingrese su número de contacto"
                 className="form-style"
                 {...register("contactNumber", {
                   required: {
                     value: true,
-                    message: "Please enter your Contact Number.",
+                    message: "Por favor ingrese su numero de contacto.",
                   },
-                  maxLength: { value: 12, message: "Invalid Contact Number" },
-                  minLength: { value: 10, message: "Invalid Contact Number" },
+                  maxLength: { value: 12, message: "Número Incorecto" },
+                  minLength: { value: 8, message: "Número incorecto" },
                 })}
                 defaultValue={user?.additionalDetails?.contactNumber}
               />
@@ -161,20 +162,20 @@ export default function EditProfile() {
 
             <div className="flex flex-col gap-2 lg:w-[48%]">
               <label htmlFor="about" className="lable-style">
-                About
+                Acerca de mí:
               </label>
               <input
                 type="text"
                 name="about"
                 id="about"
-                placeholder="Enter Bio Details"
+                placeholder="Cuéntanos sobre ti"
                 className="form-style"
                 {...register("about", { required: true })}
                 defaultValue={user?.additionalDetails?.about}
               />
               {errors.about && (
                 <span className="-mt-1 text-[12px] text-yellow-100">
-                  Please enter your About.
+                  Por favor ingrese mas informacion.
                 </span>
               )}
             </div>
@@ -186,9 +187,9 @@ export default function EditProfile() {
             onClick={() => { navigate("/dashboard/my-profile") }}
             className="cursor-pointer rounded-md bg-richblack-700 py-2 px-5 font-semibold text-richblack-50"
           >
-            Cancel
+            Cancelar
           </button>
-          <IconBtn type="submit" text="Save" />
+          <IconBtn type="Enviar" text="Guardar" />
         </div>
 
       </form>

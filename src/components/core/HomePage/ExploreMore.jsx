@@ -52,7 +52,7 @@ const ExploreMore = () => {
       -------------------------------------------------------- */}
       <header className="text-center my-10">
         <h2 className="text-3xl lg:text-4xl font-semibold">
-          Explora nuestros
+          Explora mas
           <HighlightText text={"Cursos Online"} />
         </h2>
         <p className="text-richblack-300 text-base lg:text-lg font-semibold mt-1">

@@ -21,7 +21,7 @@ export default function MyProfile() {
 
   return (
     <>
-      <h1 className="mb-14 text-4xl font-medium text-richblack-5 font-boogaloo text-center sm:text-left"> My Profile</h1>
+      <h1 className="mb-14 text-4xl font-medium text-richblack-5 font-boogaloo text-center sm:text-left"> Mi Perfil</h1>
 
       <div className="flex items-center justify-between rounded-2xl border-[1px] border-richblack-700 bg-richblack-800 p-8 px-3 sm:px-12">
         <div className="flex items-center gap-x-4">
@@ -39,7 +39,7 @@ export default function MyProfile() {
         </div>
 
         <IconBtn
-          text="Edit"
+          text="Editar"
           onclick={() => {
             navigate("/dashboard/settings")
           }}
@@ -50,9 +50,9 @@ export default function MyProfile() {
 
       <div className="my-10 flex flex-col gap-y-10 rounded-2xl border-[1px] border-richblack-700 bg-richblack-800 p-8 px-7 sm:px-12">
         <div className="flex w-full items-center justify-between">
-          <p className="text-lg font-semibold text-richblack-5">About</p>
+          <p className="text-lg font-semibold text-richblack-5">Información</p>
           <IconBtn
-            text="Edit"
+            text="Editar"
             onclick={() => {
               navigate("/dashboard/settings")
             }}
@@ -67,17 +67,17 @@ export default function MyProfile() {
             : "text-richblack-400"
             } text-sm font-medium`}
         >
-          {user?.additionalDetails?.about ?? "Write Something About Yourself"}
+          {user?.additionalDetails?.about ?? "Escribe algo sobre ti"}
         </p>
       </div>
 
       <div className="my-10 flex flex-col gap-y-10 rounded-2xl border-[1px] border-richblack-700 bg-richblack-800 p-8 px-7 sm:px-12">
         <div className="flex w-full items-center justify-between">
           <p className="text-lg font-semibold text-richblack-5">
-            Personal Details
+            Datos Personales
           </p>
           <IconBtn
-            text="Edit"
+            text="Editar"
             onclick={() => {
               navigate("/dashboard/settings")
             }}
@@ -90,13 +90,13 @@ export default function MyProfile() {
           <div className="flex flex-col gap-y-5">
 
             <div>
-              <p className="mb-2 text-sm text-richblack-600">First Name</p>
+              <p className="mb-2 text-sm text-richblack-600">Nombre</p>
               <p className="text-sm font-semibold text-richblack-5 capitalize">
                 {user?.firstName}
               </p>
             </div>
             <div>
-              <p className="mb-2 text-sm text-richblack-600">Account Type</p>
+              <p className="mb-2 text-sm text-richblack-600">Tipo Cuenta</p>
               <p className="text-sm font-semibold text-richblack-5 capitalize">
                 {user?.accountType}
               </p>
@@ -108,30 +108,30 @@ export default function MyProfile() {
               </p>
             </div>
             <div>
-              <p className="mb-2 text-sm text-richblack-600">Gender</p>
+              <p className="mb-2 text-sm text-richblack-600">Género</p>
               <p className="text-sm font-semibold text-richblack-5">
-                {user?.additionalDetails?.gender ?? "Add Gender"}
+                {user?.additionalDetails?.gender ?? "Añadir Género"}
               </p>
             </div>
           </div>
 
           <div className="flex flex-col gap-y-5">
             <div>
-              <p className="mb-2 text-sm text-richblack-600">Last Name</p>
+              <p className="mb-2 text-sm text-richblack-600">Apellidos</p>
               <p className="text-sm font-semibold text-richblack-5 capitalize">
                 {user?.lastName}
               </p>
             </div>
             <div>
-              <p className="mb-2 text-sm text-richblack-600">Phone Number</p>
+              <p className="mb-2 text-sm text-richblack-600">Numero telefono</p>
               <p className="text-sm font-semibold text-richblack-5">
-                {user?.additionalDetails?.contactNumber ?? "Add Contact Number"}
+                {user?.additionalDetails?.contactNumber ?? "Añadir Numero contacto"}
               </p>
             </div>
             <div>
-              <p className="mb-2 text-sm text-richblack-600">Date Of Birth</p>
+              <p className="mb-2 text-sm text-richblack-600">Fecha de Nacimiento</p>
               <p className="text-sm font-semibold text-richblack-5">
-                {formattedDate(user?.additionalDetails?.dateOfBirth) ?? "Add Date Of Birth"}
+                {formattedDate(user?.additionalDetails?.dateOfBirth) ?? "Añadir Fecha de Nacimiento"}
               </p>
             </div>
           </div>

@@ -47,17 +47,17 @@ function UpdatePassword() {
       ) : (
         <div className="max-w-[500px] p-4 lg:p-8">
           <h1 className="text-[1.875rem] font-semibold leading-[2.375rem] text-richblack-5">
-            Choose new password
+            Elige una nueva contraseña
           </h1>
 
           <p className="my-4 text-[1.125rem] leading-[1.625rem] text-richblack-100">
-            Almost done. Enter your new password and you're all set.
+            Ya casi está. Introduce tu nueva contraseña y listo.
           </p>
 
           <form onSubmit={handleOnSubmit}>
             <label className="relative">
               <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
-                New Password <sup className="text-pink-200">*</sup>
+                Nueva COntraseña <sup className="text-pink-200">*</sup>
               </p>
               <input
                 required
@@ -65,7 +65,7 @@ function UpdatePassword() {
                 name="password"
                 value={password}
                 onChange={handleOnChange}
-                placeholder="Enter Password"
+                placeholder="Introduce tu nueva contraseña"
                 style={{
                   boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
                 }}
@@ -85,7 +85,7 @@ function UpdatePassword() {
 
             <label className="relative mt-3 block">
               <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
-                Confirm New Password <sup className="text-pink-200">*</sup>
+                Confirmar Nueva Contraseña <sup className="text-pink-200">*</sup>
               </p>
               <input
                 required
@@ -93,7 +93,7 @@ function UpdatePassword() {
                 name="confirmPassword"
                 value={confirmPassword}
                 onChange={handleOnChange}
-                placeholder="Confirm Password"
+                placeholder="Confirmar Contraseña"
                 style={{
                   boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
                 }}
@@ -115,14 +115,14 @@ function UpdatePassword() {
               type="submit"
               className="mt-6 w-full rounded-[8px] bg-yellow-50 py-[12px] px-[12px] font-medium text-richblack-900"
             >
-              Reset Password
+              Restablecer Contraseña
             </button>
           </form>
 
           <div className="mt-6 flex items-center justify-between">
             <Link to="/login">
               <p className="flex items-center gap-x-2 text-richblack-5">
-                <BiArrowBack /> Back To Login
+                <BiArrowBack /> Volver al inicio de sesión
               </p>
             </Link>
           </div>

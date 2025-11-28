@@ -72,16 +72,16 @@ export default function CoursesTable({ courses, setCourses, loading, setLoading 
         <Thead>
           <Tr className="flex gap-x-10 rounded-t-3xl border-b border-b-richblack-800 px-6 py-2">
             <Th className="flex-1 text-left text-sm font-medium uppercase text-richblack-100">
-              Courses
+              Cursos
             </Th>
             <Th className="text-left text-sm font-medium uppercase text-richblack-100">
-              Duration
+              Duración
             </Th>
             <Th className="text-left text-sm font-medium uppercase text-richblack-100">
-              Price
+              Precio
             </Th>
             <Th className="text-left text-sm font-medium uppercase text-richblack-100">
-              Actions
+              Acciones
             </Th>
           </Tr>
         </Thead>
@@ -99,7 +99,7 @@ export default function CoursesTable({ courses, setCourses, loading, setLoading 
           {!loading && courses?.length === 0 ? (
             <Tr>
               <Td className="py-10 text-center text-2xl font-medium text-richblack-100">
-                No courses found
+                No se encontraron cursos
               </Td>
             </Tr>
           )
@@ -130,26 +130,26 @@ export default function CoursesTable({ courses, setCourses, loading, setLoading 
 
                       {/* created At */}
                       <p className="text-[12px] text-richblack-100 mt-4">
-                        Created: {formatDate(course?.createdAt)}
+                        Creado: {formatDate(course?.createdAt)}
                       </p>
 
                       {/* updated At */}
                       <p className="text-[12px] text-richblack-100 ">
-                        updated: {formatDate(course?.updatedAt)}
+                        Actualizado: {formatDate(course?.updatedAt)}
                       </p>
 
                       {/* course status */}
                       {course.status === COURSE_STATUS.DRAFT ? (
                         <p className="mt-2 flex w-fit flex-row items-center gap-2 rounded-full bg-richblack-700 px-2 py-[2px] text-[12px] font-medium text-pink-100">
                           <HiClock size={14} />
-                          Drafted
+                          Redactada
                         </p>)
                         :
                         (<div className="mt-2 flex w-fit flex-row items-center gap-2 rounded-full bg-richblack-700 px-2 py-[2px] text-[12px] font-medium text-yellow-100">
                           <p className="flex h-3 w-3 items-center justify-center rounded-full bg-yellow-100 text-richblack-700">
                             <FaCheck size={8} />
                           </p>
-                          Published
+                          Publicado
                         </div>
                         )}
                     </div>
@@ -175,11 +175,11 @@ export default function CoursesTable({ courses, setCourses, loading, setLoading 
                       disabled={loading}
                       onClick={() => {
                         setConfirmationModal({
-                          text1: "Do you want to delete this course?",
+                          text1: "¿Quieres eliminar este curso?",
                           text2:
-                            "All the data related to this course will be deleted",
-                          btn1Text: !loading ? "Delete" : "Loading...  ",
-                          btn2Text: "Cancel",
+                            "Todos los datos relacionados con este curso serán eliminados.",
+                          btn1Text: !loading ? "Eliminar" : "Loading...  ",
+                          btn2Text: "Cancelar",
                           btn1Handler: !loading
                             ? () => handleCourseDelete(course._id)
                             : () => { },
@@ -189,7 +189,7 @@ export default function CoursesTable({ courses, setCourses, loading, setLoading 
 
                         })
                       }}
-                      title="Delete"
+                      title="Eliminar"
                       className="px-1 transition-all duration-200 hover:scale-110 hover:text-[#ff0000]"
                     >
                       <RiDeleteBin6Line size={20} />

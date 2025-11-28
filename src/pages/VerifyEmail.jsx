@@ -37,10 +37,10 @@ function VerifyEmail() {
           :
           (
             <div className="max-w-[500px] p-4 lg:p-8">
-              <h1 className="text-richblack-5 font-semibold text-[1.875rem] leading-[2.375rem]">Verify Email</h1>
+              <h1 className="text-richblack-5 font-semibold text-[1.875rem] leading-[2.375rem]">Verificar correo electrónico</h1>
 
               <p className="text-[1.125rem] leading-[1.625rem] my-4 text-richblack-100">
-                A verification code has been sent to you. Enter the code below
+                Se te ha enviado un código de verificación. Introdúcelo a continuación.
               </p>
 
               <form onSubmit={handleVerifyAndSignup}>
@@ -68,14 +68,14 @@ function VerifyEmail() {
                   type="submit"
                   className="w-full bg-yellow-50 py-[12px] px-[12px] rounded-[8px] mt-6 font-medium text-richblack-900"
                 >
-                  Verify Email
+                  Verificar Correo
                 </button>
               </form>
 
               <div className="mt-6 flex items-center justify-between">
                 <Link to="/signup">
                   <p className="text-richblack-5 flex items-center gap-x-2">
-                    <BiArrowBack /> Back To Signup
+                    <BiArrowBack /> Volver a Registrar
                   </p>
                 </Link>
 
@@ -84,7 +84,7 @@ function VerifyEmail() {
                   onClick={() => dispatch(sendOtp(signupData.email, navigate), setOtp(''))}
                 >
                   <RxCountdownTimer />
-                  Resend it
+                  Reenviar
                 </button>
               </div>
             </div>

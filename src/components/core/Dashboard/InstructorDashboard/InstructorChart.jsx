@@ -49,7 +49,7 @@ export default function InstructorChart({ courses }) {
 
   return (
     <div className="flex flex-1 flex-col gap-y-4 rounded-md bg-richblack-800 p-6">
-      <p className="text-lg font-bold text-richblack-5">Visualize</p>
+      <p className="text-lg font-bold text-richblack-5">Visualizar</p>
 
       <div className="space-x-4 font-semibold">
         {/* Button to switch to the "students" chart */}
@@ -60,7 +60,7 @@ export default function InstructorChart({ courses }) {
             : "text-yellow-400"
             }`}
         >
-          Students
+          Estudiantes
         </button>
 
         {/* Button to switch to the "income" chart */}
@@ -71,7 +71,7 @@ export default function InstructorChart({ courses }) {
             : "text-yellow-400"
             }`}
         >
-          Income
+          Ingresos
         </button>
       </div>
 
